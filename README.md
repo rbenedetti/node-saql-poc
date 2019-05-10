@@ -1,6 +1,6 @@
 # node-saql-poc
 
-Overview
+Overview 
 
 This POC demonstrates the use of OAuth 2.0 from a client application - in this case, a node.js application running on Heroku - to connect to Salesforce and submit a SAQL query to the Einstein Analytics API (aka the /wave/query REST API resource).
 
