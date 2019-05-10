@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Submit SAQL Query</title>
+    </head>
+    <body>
+        <form method="POST" action="/saql">
+            <label>SAQL To Execute:</label><br/>
+            <textarea name="saqlQuery" rows="10" cols="100">
+Example:
+q = load "dataset_id/dataset_current_version_id";
+q = group q by ('Key', 'Value');
+q = foreach q generate 'Key' as 'Key', 'Value' as 'Value', count() as 'count';
+q = order q by ('Key' asc, 'Value' asc);
+q = limit q 2000;            </textarea></br>
+            <input type="submit" value="Submit SAQL"/>
+        </form>
+    </body>
+</html>
